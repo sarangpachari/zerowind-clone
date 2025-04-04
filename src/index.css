@@ -1,1 +1,23 @@
 @import url('https://fonts.cdnfonts.com/css/gt-america-trial');
+
+/* MAIN COLORS, FONTS< BG */
+.yellow-text{
+  color: #E2DE00;
+}
+.off-white-text{
+  color: #F5F5F5;
+}
+.gray-bg{
+  background-color: #272727 ;
+}
+.gt-america-exp-black{
+  font-family: "GT America Exp Black", sans-serif;
+}
+.gt-america-regular{
+  font-family: "GT America Regular", sans-serif;
+}
+
+/* HERO-Banner Text */
+.hero-banner-text{
+  
+}
