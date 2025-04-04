@@ -1,23 +1,31 @@
-@import url('https://fonts.cdnfonts.com/css/gt-america-trial');
+@import url("https://fonts.cdnfonts.com/css/gt-america-trial");
+
+/* HIDDEN SCROLLBAR */
+::-webkit-scrollbar {
+  display: none;
+}
 
 /* MAIN COLORS, FONTS< BG */
-.yellow-text{
-  color: #E2DE00;
+.yellow-text {
+  color: #e2de00;
 }
-.off-white-text{
-  color: #F5F5F5;
+.off-white-text {
+  color: #f5f5f5;
 }
-.gray-bg{
-  background-color: #272727 ;
+.gray-bg {
+  background-color: #272727;
 }
-.gt-america-exp-black{
+.gt-america-exp-black {
   font-family: "GT America Exp Black", sans-serif;
 }
-.gt-america-regular{
+.gt-america-regular {
   font-family: "GT America Regular", sans-serif;
 }
 
 /* HERO-Banner Text */
-.hero-banner-text{
-  
+.stroke-text {
+  -webkit-text-stroke: 1.5px #e2de00; 
+  color: transparent; 
+  width: 100%;
 }
+
