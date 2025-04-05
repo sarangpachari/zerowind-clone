@@ -1,28 +1,81 @@
-@import url('https://fonts.cdnfonts.com/css/gt-america-trial');
+@import url("https://fonts.cdnfonts.com/css/gt-america-trial");
+
+/* HIDDEN SCROLLBAR */
+::-webkit-scrollbar {
+  display: none;
+}
 
 /* MAIN COLORS, FONTS< BG */
-
-/* *{
-  background-color: #272727 ;
-
-} */
-.yellow-text{
-  color: #E2DE00;
+.yellow-text {
+  color: #e2de00;
 }
-.off-white-text{
-  color: #F5F5F5;
+.off-white-text {
+  color: #f5f5f5;
 }
-.gray-bg{
-  background-color: #272727 ;
+.gray-bg {
+  background-color: #272727;
 }
-.gt-america-exp-black{
+.gt-america-exp-black {
   font-family: "GT America Exp Black", sans-serif;
 }
-.gt-america-regular{
+.gt-america-regular {
   font-family: "GT America Regular", sans-serif;
+}
+.gt-america-ext-regular{
+  font-family: "GT America Ext Regular", sans-serif;
 }
 
 /* HERO-Banner Text */
-.hero-banner-text{
-  
+.stroke-text {
+  -webkit-text-stroke: 1.5px #e2de00;
+  color: transparent;
+  width: 100%;
 }
+
+/* SVG STYLES */
+.cls-1 {
+  fill: #e2de00;
+}
+
+.cls-1,
+.cls-2 {
+  stroke-width: 0px;
+}
+
+.cls-2 {
+  fill: none;
+}
+
+/* ANIMATION - ROUND ARROW */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating-container:hover .icon-wrapper svg {
+  animation: spin-slow 5s linear infinite;
+}
+
+/* ANIMATION - DROPLETS */
+@keyframes upDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.group:hover .droplet1 {
+  animation: upDown 2s ease-in-out infinite;
+}
+
+.group:hover .droplet2 {
+  animation: upDown 2s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
