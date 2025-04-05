@@ -3,7 +3,8 @@ import bannerVideo from "../../assets/images/home/home-banner.mp4";
 
 const HeroBanner = () => {
   return (
-    <div className="relative w-full h-[70vh] sm:h-[60vh] md:h-[70vh] overflow-hidden">
+    <div className="pt-[120px]">
+      <div className="relative w-full h-[70vh] sm:h-[60vh] md:h-[70vh] overflow-hidden px-12">
       {/* Video Background */}
       <video
         src={bannerVideo}
@@ -15,7 +16,7 @@ const HeroBanner = () => {
       ></video>
 
       {/* Text Overlay */}
-      <div className="absolute inset-0 flex md:items-center w-full md:p-10 p-4">
+      <div className="absolute inset-0 flex md:items-center w-full px-16 ">
         <h1 className="text-5xl md:text-[6rem] lg:text-[12rem] font-extrabold uppercase text-transparent stroke-text scale-y-[0.8]">
           <div className="flex flex-col w-full h-full justify-between">
             <span>BETTER</span>
@@ -26,6 +27,7 @@ const HeroBanner = () => {
           </div>
         </h1>
       </div>
+    </div>
     </div>
   );
 };
