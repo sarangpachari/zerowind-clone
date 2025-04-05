@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import HeroBanner from "../components/Home/HeroBanner";
+import Contact from "../components/Home/Contact";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         Officia non odio ullam, fuga modi ipsa corrupti asperiores voluptates illum rerum illo nam omnis aliquid deleniti pariatur alias amet eos quaerat adipisci quisquam maxime dicta, earum tenetur! At, id!
         Ad officia possimus ratione, voluptate nisi at a repellendus mollitia soluta quas eius minus dicta voluptatibus odit, minima sed nulla vero eos? Atque voluptatibus aut dolores excepturi minus cumque dolore!</p>
       </div>
+      <Contact/>
       <Footer/>
     </>
   );

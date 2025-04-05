@@ -23,7 +23,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Main Content */}
-      <footer className="px-6 py-20 md:px-40 bg-[#E2DE00] gt-america-regular">
+      <footer className="px-6 py-36 md:px-40 bg-[#E2DE00] gt-america-regular">
         <div className="container mx-auto grid md:grid-cols-2 grid-cols-1 gap-10">
           {/* Left Section - Links */}
           <div className="grid md:grid-cols-4 grid-cols-2 gap-x-9 mt-0 md:mt-24">
@@ -63,7 +63,7 @@ const Footer = () => {
           </div>
 
           {/* Right Section - Newsletter with Video */}
-          <div className="relative w-full h-72 overflow-hidden rounded-xl hidden md:block">
+          <div className="relative w-9/12 h-72 overflow-hidden rounded-xl hidden md:block">
             {/* Background video */}
             <video
               className="absolute inset-0 w-full h-full object-cover"
@@ -76,23 +76,24 @@ const Footer = () => {
             </video>
 
             {/* Overlay content */}
-            <div className="relative z-10 h-full w-full bg-black/70 text-white p-6 flex flex-col justify-center gap-3">
+            <div className="relative z-10 h-full w-full  text-white p-6 flex flex-col gap-x-1 justify-center gap-3">
               <h4 className="text-xl font-bold mb-2">Newsletter</h4>
 
               <div className="relative w-full">
                 <input
                   type="email"
                   placeholder="Email"
-                  className="w-full h-12 mt-2 pr-28 p-3 text-black rounded-md border-white border-2"
+                  style={{width:'300px'}}
+                  className=" h-12 mt-2 pr-28 p-3 text-black rounded-md border-white border-2"
                 />
-                <button className="bg-[#E2DE00] text-black font-bold py-4 px-6 rounded-md absolute top-1 right-1 text-sm">
+                <button className="bg-[#E2DE00]  text-black font-bold py-4 px-8 rounded-md absolute top-1 right-1 text-sm">
                   Iscrivimi
                 </button>
               </div>
 
-              <label className="text-xs flex items-start mt-2">
-                <input type="checkbox" className="mr-2 mt-1" />
-                Dichiaro di aver letto e di accettare il trattamento dei dati personali
+              <label className="text-xs  flex items-start mt-2">
+                <input type="checkbox" className="mr-2 mt-1 bg-[#E2DE00] " />
+                <span className="text-gray-500"> Dichiaro di aver letto e di accettare il trattamento dei dati personali</span>
               </label>
             </div>
           </div>
