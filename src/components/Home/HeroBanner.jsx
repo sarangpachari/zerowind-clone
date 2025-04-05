@@ -3,7 +3,7 @@ import bannerVideo from "../../assets/images/home/home-banner.mp4";
 
 const HeroBanner = () => {
   return (
-    <div className="pt-[120px]">
+    <div className="pt-[120px] pb-10">
       <div className="relative w-full h-[70vh] sm:h-[60vh] md:h-[70vh] overflow-hidden px-12">
       {/* Video Background */}
       <video
