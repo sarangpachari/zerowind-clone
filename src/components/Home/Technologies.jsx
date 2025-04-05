@@ -6,7 +6,7 @@ import Brave from "./Technologies/Brave";
 
 const Technologies = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center gap-8 px-12">
+    <div className="w-full flex flex-col justify-center items-center gap-8 px-12 py-10">
       <div className="flex gap-8 w-full justify-evenly items-center">
         <Fit />
         <Motion />
