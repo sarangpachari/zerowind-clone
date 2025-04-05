@@ -1,0 +1,18 @@
+.footer-color{
+    background-color:#E2DE00;
+    
+}
+.text-stroke-1 {
+    -webkit-text-stroke: 1px #272727;
+    font-size: 160px;
+    
+    
+  }
+
+  @media(max-width: 640px){
+    .text-stroke-1{
+        font-size: 70px;
+
+    }
+  }
+  

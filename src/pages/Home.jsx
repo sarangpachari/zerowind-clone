@@ -1,7 +1,12 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import HeroBanner from "../components/Home/HeroBanner";
 import Technologies from "../components/Home/Technologies";
+
+import Contact from "../components/Home/Contact";
+
+
 
 const Home = () => {
   return (
@@ -11,6 +16,8 @@ const Home = () => {
         <HeroBanner />
         <Technologies />
       </div>
+      <Contact/>
+      <Footer/>
     </>
   );
 };
