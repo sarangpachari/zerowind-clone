@@ -7,6 +7,7 @@ import bradsoftshell from '../assets/images/home-products/brad-softshell.webp';
 import grandprix from '../assets/images/home-products/grand-prix.webp';
 import skin from '../assets/images/home-products/skin.webp';
 import tempest from '../assets/images/home-products/tempest.webp';
+import Marquee from 'react-fast-marquee';
 
 const productOptions = [
   { id: 1, img: arsenal, name: 'Arsenal' },
@@ -32,10 +33,13 @@ function Product() {
   return (
     <div className="relative w-full px-10 h-screen bg-[#272727] flex flex-col items-center justify-center overflow-hidden text-white">
       {/* Top Navigation */}
-      <div className="absolute top-8 text-gray-300 text-sm tracking-wide font-light">
-        UR PRODUCTS . DISCC
-      </div>
+      <div className='w-[160px]'>
+      <Marquee className='text-white' speed={40}>
+        <div className='ms-3 uppercase tracking-widest'>Discover our products
+        </div>
+      </Marquee>
 
+      </div>
       {/* Animated Background Text */}
       <div className="absolute z-0">
         <AnimatePresence mode="wait">
@@ -73,11 +77,10 @@ function Product() {
         {productOptions.map((product) => (
           <div
             key={product.id}
-            className={`p-1 rounded-lg cursor-pointer ${
-              selected.id === product.id
+            className={`p-1 rounded-lg cursor-pointer ${selected.id === product.id
                 ? ' border border-yellow-400'
                 : 'opacity-40 hover:opacity-100 transition duration-300'
-            }`}
+              }`}
             onClick={() => handleSelect(product)}
           >
             <img
