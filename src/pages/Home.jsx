@@ -5,6 +5,7 @@ import HeroBanner from "../components/Home/HeroBanner";
 import Technologies from "../components/Home/Technologies";
 
 import Contact from "../components/Home/Contact";
+import Features from "../components/Home/Features";
 
 
 
@@ -15,6 +16,7 @@ const Home = () => {
         <Navbar />
         <HeroBanner />
         <Technologies />
+        <Features/>
       </div>
       <Contact/>
       <Footer/>
