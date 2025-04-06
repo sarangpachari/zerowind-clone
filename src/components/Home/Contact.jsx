@@ -4,7 +4,7 @@ import newsletter from "../../assets/images/home-newsletter/newsletter.mp4";
 function Contact() {
     return (
         <div className="pt-[120px] px-4 sm:px-12 h-auto bg-[#272727]">
-        <div className="relative w-full min-h-[90vh] sm:h-screen overflow-hidden rounded-md">
+        <div className="relative w-full min-h-[90vh] sm:h-screen overflow-hidden rounded-xl">
           {/* Video Background */}
           <div className="absolute inset-0 w-full h-full z-0">
             <video
