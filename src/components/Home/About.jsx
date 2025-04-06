@@ -1,7 +1,7 @@
 import React from "react";
-import RollingSentence from "../About/RollingSentence";
-import TwoColumnParagraph from "../About/TwoColumnParagraph";
-import ContactBtn from "../About/ContactBtn";
+import RollingSentence from "./About/RollingSentence";
+import TwoColumnParagraph from "./About/TwoColumnParagraph";
+import ContactBtn from "./About/ContactBtn";
 
 const About = () => {
   const paragraph = `From the beginning, ZeroWind has developed much of the fabric range using dynamic breathability membranes : + Intensity + Breathability.

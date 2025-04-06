@@ -5,14 +5,14 @@ import { motion } from 'framer-motion';
 
 function Zwr() {
   return (
-    <div className="relative rounded-md ">
+    <div className="relative rounded-xl ">
       <video
         src={relife}
         autoPlay
         playsInline
         muted
         loop
-        className="rounded-md brightness-90 h-[500px] w-full object-cover"
+        className="rounded-xl brightness-90 h-[500px] w-full object-cover"
       />
 
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center flex-col gap-3">
