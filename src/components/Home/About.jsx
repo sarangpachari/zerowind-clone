@@ -1,16 +1,21 @@
 import React from "react";
 import RollingSentence from "../About/RollingSentence";
+import TwoColumnParagraph from "../About/TwoColumnParagraph";
+import ContactBtn from "../About/ContactBtn";
 
 const About = () => {
+  const paragraph = `From the beginning, ZeroWind has developed much of the fabric range using dynamic breathability membranes : + Intensity + Breathability.
+The extraordinary technical performance of ZeroWind fabrics is guaranteed by the constant investment and research work on innovative materials to create unique garments for cycling, outdoor, running and urban sectors.
+Laboratory tests and practical trials ensure the best experience of use and usage by the end consumer.`;
   return (
-    <div className="mt-28 pb-20">
+    <div className="mt-28 pb-20 relative">
       <RollingSentence />
       {/* BG IMAGE */}
       <div className="">
         <svg
-          width="2300"
-          height="2200"
-          viewBox="20 0 170 164"
+          width="1900"
+          height="600"
+          viewBox="30 0 140 40"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className="opacity-3"
@@ -29,6 +34,20 @@ const About = () => {
             d="M10.5556 5.20923c0 3.16915-2.34584 5.14277-5.13153 5.14277-2.79697 0-5.14282-1.97362-5.14282-5.14277C.28125 2.0288 2.6271.0664063 5.42407.0664063 8.19849.0664062 10.5556 2.0288 10.5556 5.20923Zm-.94736 0c0-2.68419-1.91727-4.3308-4.18417-4.3308-2.27818 0-4.20675 1.64661-4.20675 4.3308 0 2.67291 1.91729 4.33079 4.20675 4.33079 2.2669 0 4.18417-1.65788 4.18417-4.33079Zm-2.88719.4624 1.28568 2.31202H6.46164L5.34511 5.8408H4.7248v2.14285H3.31503V2.35586H5.7624c1.3421 0 2.08646.65413 2.08646 1.78195-.01128.71052-.41729 1.2857-1.12781 1.53382Zm-2.00751-.80075h.77819c.56391 0 .90224-.25939.90224-.73307 0-.49624-.30449-.74436-.90224-.74436h-.77819v1.47743Z"
           ></path>
         </svg>
+        {/* ABOUT CONTENT */}
+        <div className=" absolute bottom-5 left-36 px-12 gt-america-regular">
+          <div className="text-3xl text-[#f5f5f5] max-w-2xl mb-24">
+            Passion for outdoor activities and pursuit of technicality make
+            ZeroWind the ideal brand for creating performance fabrics for a wide
+            range of uses.
+          </div>
+          <div className="text-base text-[#959595] tracking-widest">
+            <TwoColumnParagraph text={paragraph} />
+          </div>
+          <div className="mt-24">
+            <ContactBtn />
+          </div>
+        </div>
       </div>
     </div>
   );

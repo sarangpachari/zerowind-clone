@@ -33,7 +33,7 @@ const RollingSentence = () => {
   }, []);
 
   return (
-    <div className="text-7xl text-[#f5f5f5] font-black flex flex-col gt-america-exp-black px-12">
+    <div className="absolute bottom-5/6 left-0 text-7xl text-[#f5f5f5] font-black flex flex-col gt-america-exp-black px-12">
       <div className="flex">
         <div className="h-[1.2em]">ZeroWind creates</div>
         <RollingWord word={words[index]} />
