@@ -11,7 +11,7 @@ Laboratory tests and practical trials ensure the best experience of use and usag
     <div className="mt-28 pb-20 relative">
       <RollingSentence />
       {/* BG IMAGE */}
-      <div className="">
+      <div className="overflow-x-hidden">
         <svg
           width="1900"
           height="600"
