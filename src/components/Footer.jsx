@@ -84,10 +84,10 @@ const Footer = () => {
                   type="email"
                   placeholder="Email"
                   style={{width:'300px'}}
-                  className=" h-12 mt-2 pr-28 p-3 text-black rounded-md border-white border-2"
+                  className=" h-13 mt-1 pr-28 p-3 text-black rounded-md border-white border-2"
                 />
-                <button className="bg-[#E2DE00]  text-black font-bold py-4 px-8 rounded-md absolute top-1 right-1 text-sm">
-                  Iscrivimi
+                <button className="bg-[#E2DE00]  text-black  py-4 px-8 rounded-md absolute top-1 right-1 text-sm">
+                  Subscribe me
                 </button>
               </div>
 
