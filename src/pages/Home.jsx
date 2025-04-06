@@ -7,6 +7,7 @@ import About from "../components/Home/About";
 import Contact from "../components/Home/Contact";
 import Features from "../components/Home/Features";
 import CustomCursor from "../components/CustomCursor";
+import Product from "../components/Product";
 
 const Home = () => {
   const [showCursor, setShowCursor] = useState(false);
@@ -30,6 +31,7 @@ const Home = () => {
         <div onMouseEnter={enableCursor} onMouseLeave={disableCursor}>
         <Features />
         </div>
+        <Product/>
       </div>
       
       <Contact />
