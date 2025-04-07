@@ -38,18 +38,18 @@ const CustomCursor = ({ visible }) => {
           animate={{
             opacity: 1,
             scale: 1,
-            rotate: 360,
+            rotate: 180,
             transition: {
-              duration: 0.9,
+              duration: 0.5,
               ease: 'easeOut',
             },
           }}
           exit={{
             opacity: 0,
             scale: 0.5,
-            rotate: -180,
+            rotate: -90,
             transition: {
-              duration: 1,
+              duration: 0.2,
               ease: 'easeIn',
             },
           }}

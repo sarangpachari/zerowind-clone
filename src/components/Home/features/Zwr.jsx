@@ -1,7 +1,7 @@
-import React from 'react'
-import relife from '../../../assets/images/home-features/feature-2.mp4'
-import Marquee from 'react-fast-marquee'
-import { motion } from 'framer-motion';
+import React from "react";
+import relife from "../../../assets/images/home-features/feature-2.mp4";
+import Marquee from "react-fast-marquee";
+import { motion } from "framer-motion";
 
 function Zwr() {
   return (
@@ -16,12 +16,10 @@ function Zwr() {
       />
 
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center flex-col gap-3">
-        <div className='w-[80px] overflow-hidden'>
-          <Marquee className='text-white' speed={40}>
-            <div className='ms-3 uppercase tracking-widest'>Feature .</div>
-
+        <div className="w-[80px] overflow-hidden">
+          <Marquee className="text-white" speed={40}>
+            <div className="ms-3 uppercase tracking-widest">Feature .</div>
           </Marquee>
-
         </div>
         <div className="h-full w-full flex flex-col gap-4 justify-center text-wrapper">
           {/* ZWR TEXT */}
@@ -47,7 +45,7 @@ function Zwr() {
           </svg>
         </div>
         <div className="h-full w-1/3 flex justify-center  items-center icon-wrapper">
-        {/* DROPLET ANIMATION */}
+          {/* DROPLET ANIMATION */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -63,8 +61,8 @@ function Zwr() {
               transition={{
                 duration: 2.5,
                 repeat: Infinity,
-                repeatType: 'loop',
-                ease: 'easeInOut',
+                repeatType: "loop",
+                ease: "easeInOut",
                 delay: 0.5,
               }}
             ></motion.path>
@@ -76,8 +74,8 @@ function Zwr() {
               transition={{
                 duration: 2.5,
                 repeat: Infinity,
-                repeatType: 'loop',
-                ease: 'easeInOut',
+                repeatType: "loop",
+                ease: "easeInOut",
                 delay: 0.3,
               }}
             ></motion.path>
@@ -85,7 +83,7 @@ function Zwr() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Zwr
+export default Zwr;
