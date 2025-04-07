@@ -1,29 +1,47 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../components/footer.css";
 import Marquee from "react-fast-marquee";
 import newsletter from "../assets/images/home-newsletter/newsletter.mp4";
+import { Parallax } from "react-scroll-parallax";
+import { motion, useInView } from "framer-motion";
 
 const Footer = () => {
+  const marqueeRef = useRef(null);
+  const isInView = useInView(marqueeRef, { once: false, margin: "-100px" });
+
+  
   return (
     <div className="w-screen footer-color">
       {/* Marquee Section */}
-      <div className="py-4">
-        <Marquee className="gt-america-exp-black" speed={100}>
-          {Array(4)
-            .fill("better in motion")
-            .map((text, index) => (
-              <div
-                key={index}
-                className="me-7 text-transparent uppercase font-extrabold text-stroke-1 text-stroke-[#272727]"
-              >
-                {text}
-              </div>
-            ))}
-        </Marquee>
+      <div className="overflow-hidden">
+      <Parallax speed={-20}>
+          <motion.div
+            ref={marqueeRef}
+            initial={{ marginBottom: "5rem", opacity: 0 }}
+            animate={{
+              marginBottom: isInView ? "5rem" : "4rem",
+              opacity: isInView ? 1 : 0,
+              transition: { duration: 0.6, ease: "easeInOut" },
+            }}
+          >
+            <Marquee className="gt-america-exp-black" speed={100}>
+              {Array(4)
+                .fill("better in motion")
+                .map((text, index) => (
+                  <div
+                    key={index}
+                    className="me-7 text-transparent uppercase font-extrabold text-stroke-1 text-stroke-[#272727]"
+                  >
+                    {text}
+                  </div>
+                ))}
+            </Marquee>
+          </motion.div>
+        </Parallax>
       </div>
 
       {/* Footer Main Content */}
-      <footer className="px-6 py-36 md:px-40 bg-[#E2DE00] gt-america-regular">
+      <footer className="px-6 py-36 mt-10 md:px-40 bg-[#E2DE00] gt-america-regular">
         <div className="container mx-auto grid md:grid-cols-2 grid-cols-1 gap-10">
           {/* Left Section - Links */}
           <div className="grid md:grid-cols-4 grid-cols-2 gap-x-9 mt-0 md:mt-24">

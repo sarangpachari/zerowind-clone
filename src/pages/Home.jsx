@@ -8,6 +8,7 @@ import Contact from "../components/Home/Contact";
 import Features from "../components/Home/Features";
 import CustomCursor from "../components/CustomCursor";
 import Product from "../components/Product";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 const Home = () => {
   const [showCursor, setShowCursor] = useState(false);
@@ -37,7 +38,10 @@ const Home = () => {
       </div>
 
       <Contact />
+      <ParallaxProvider>
+      {/* Other components */}
       <Footer />
+    </ParallaxProvider>
     </>
   );
 };
