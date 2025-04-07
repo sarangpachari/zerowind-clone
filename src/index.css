@@ -32,6 +32,11 @@
   width: 100%;
 }
 
+.fill-text {
+  color: #e2de00;
+  -webkit-text-stroke: 0;
+}
+
 /* SVG STYLES */
 .cls-1 {
   fill: #e2de00;

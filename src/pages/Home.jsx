@@ -22,18 +22,20 @@ const Home = () => {
       <div className="gray-bg">
         <Navbar />
         <HeroBanner />
-        
+
         <div onMouseEnter={enableCursor} onMouseLeave={disableCursor}>
           <Technologies />
         </div>
         <About />
 
         <div onMouseEnter={enableCursor} onMouseLeave={disableCursor}>
-        <Features />
+          <Features />
         </div>
-        <Product/>
+        <div onMouseEnter={enableCursor} onMouseLeave={disableCursor}>
+          <Product />
+        </div>
       </div>
-      
+
       <Contact />
       <Footer />
     </>
