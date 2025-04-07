@@ -116,8 +116,8 @@ const Navbar = () => {
         </div>
 
         {/* HEADER RIGHT SIDE */}
-        <div className="header-right gray-bg yellow-text flex justify-center items-center gap-8 px-14 rounded-bl-[3rem]">
-          <AnimatePresence>
+        <AnimatePresence>
+          <div className="header-right gray-bg yellow-text flex justify-center items-center gap-8 px-14 rounded-bl-[3rem]">
             <div
               className="h-full flex hover:text-[#F5F5F5]"
               onMouseEnter={() => {
@@ -129,12 +129,12 @@ const Navbar = () => {
             >
               <p className="flex items-center gap-2 uppercase gt-america-ext-regular tracking-widest text-sm hover:cursor-pointer">
                 Technologies
-                <motion.div
+                <motion.span
                   animate={{ rotate: hiddenTechnologies ? 0 : 90 }}
                   transition={{ duration: 0.3, ease: "easeInOut" }}
                 >
                   <FaPlus />
-                </motion.div>
+                </motion.span>
               </p>
             </div>
 
@@ -149,12 +149,12 @@ const Navbar = () => {
             >
               <p className="flex items-center gap-2 uppercase gt-america-ext-regular tracking-widest text-sm hover:cursor-pointer">
                 Features
-                <motion.div
+                <motion.span
                   animate={{ rotate: hiddenFeatures ? 0 : 90 }}
                   transition={{ duration: 0.3, ease: "easeInOut" }}
                 >
                   <FaPlus />
-                </motion.div>
+                </motion.span>
               </p>
             </div>
             <motion.div
@@ -162,13 +162,13 @@ const Navbar = () => {
               transition={{ duration: 0.3, ease: "easeInOut" }}
             >
               <IoIosMenu
-                className={`${showMenu ? `text-[#f5f5f5]` : `text-[#e2de00]`}`}
+                className={showMenu ? "text-[#f5f5f5]" : "text-[#e2de00]"}
                 onClick={() => setShowMenu((prev) => !prev)}
                 size={45}
               />
             </motion.div>
-          </AnimatePresence>
-        </div>
+          </div>
+        </AnimatePresence>
       </header>
 
       <AnimatePresence>
