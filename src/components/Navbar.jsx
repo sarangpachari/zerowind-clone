@@ -195,11 +195,11 @@ const Navbar = () => {
                 transition={{ type: "spring", stiffness: 300, damping: 30 }}
                 className="fixed overflow-y-auto h-full inset-0 gray-bg text-[#f5f5f5] flex flex-col px-6 items-center justify-center space-y-6 text-xl font-semibold shadow-lg md:hidden"
               >
-                <button onClick={toggleMenu} className="absolute top-8 right-8">
+                <button onClick={toggleMenu} className="absolute top-8 right-8 z-50 ">
                   <X className="w-10 h-10" />
                 </button>
                 {/* TECHNOLOGY */}
-                <div className="text-center">
+                <div className="text-center py-8 mt-40">
                   <p className="mb-4 text-xs tracking-wider">TECHNOLOGY</p>
                   <div className="flex flex-col gap-8">
                     <div className="flex gap-8 justify-evenly">

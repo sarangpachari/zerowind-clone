@@ -9,12 +9,12 @@ const Footer = () => {
   const marqueeRef = useRef(null);
   const isInView = useInView(marqueeRef, { once: false, margin: "-100px" });
 
-  
+
   return (
     <div className="w-screen footer-color">
       {/* Marquee Section */}
-      <div className="overflow-hidden">
-      <Parallax speed={-20}>
+      <div className="overflow-hidden w-full px-4 sm:px-8 py-6">
+        <Parallax speed={-20}>
           <motion.div
             ref={marqueeRef}
             initial={{ marginBottom: "5rem", opacity: 0 }}
@@ -24,13 +24,17 @@ const Footer = () => {
               transition: { duration: 0.6, ease: "easeInOut" },
             }}
           >
-            <Marquee className="gt-america-exp-black" speed={100}>
+            <Marquee
+              className="gt-america-exp-black text-[8vw] sm:text-4xl md:text-5xl"
+              speed={60}
+              gradient={false}
+            >
               {Array(4)
                 .fill("better in motion")
                 .map((text, index) => (
                   <div
                     key={index}
-                    className="me-7 text-transparent uppercase font-extrabold text-stroke-1 text-stroke-[#272727]"
+                    className="me-7 text-transparent uppercase font-extrabold whitespace-nowrap text-stroke-1 text-stroke-[#272727]"
                   >
                     {text}
                   </div>
@@ -40,14 +44,15 @@ const Footer = () => {
         </Parallax>
       </div>
 
+
       {/* Footer Main Content */}
-      <footer className="px-6 py-36 mt-10 md:px-40 bg-[#E2DE00] gt-america-regular">
+      <footer className="px-6 py-32 mt-10 md:px-40 bg-[#E2DE00] gt-america-regular">
         <div className="container mx-auto grid md:grid-cols-2 grid-cols-1 gap-10">
           {/* Left Section - Links */}
-          <div className="grid md:grid-cols-4 grid-cols-2 gap-x-9 mt-0 md:mt-24">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10 mt-10 md:mt-24 px-4 sm:px-8">
             <div>
-              <h5 className="">Tecnologie</h5>
-              <ul className="mt-4 space-y-1">
+              <h5 className="text-lg font-semibold">Tecnologie</h5>
+              <ul className="mt-4 space-y-1 text-sm text-[#272727]">
                 <li>FIT</li>
                 <li>Motion</li>
                 <li>Power</li>
@@ -56,29 +61,30 @@ const Footer = () => {
             </div>
 
             <div>
-              <h5 className="">Features</h5>
-              <ul className="mt-4 space-y-1">
+              <h5 className="text-lg font-semibold">Features</h5>
+              <ul className="mt-4 space-y-1 text-sm text-[#272727]">
                 <li>Relife</li>
                 <li>ZWR</li>
               </ul>
             </div>
 
             <div>
-              <h5 className="">Zerowind</h5>
-              <ul className="mt-4 space-y-1">
+              <h5 className="text-lg font-semibold">Zerowind</h5>
+              <ul className="mt-4 space-y-1 text-sm text-[#272727]">
                 <li>Contact</li>
                 <li>News</li>
               </ul>
             </div>
 
             <div>
-              <h5 className="">Contatti</h5>
-              <ul className="mt-4 space-y-1">
+              <h5 className="text-lg font-semibold">Contatti</h5>
+              <ul className="mt-4 space-y-1 text-sm text-[#272727]">
                 <li>info@zerowind.it</li>
                 <li>+39 045 92 16 888</li>
               </ul>
             </div>
           </div>
+
 
           {/* Right Section - Newsletter with Video */}
           <div className="relative w-9/12 h-72 overflow-hidden rounded-xl hidden md:block">
@@ -101,7 +107,7 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Email"
-                  style={{width:'300px'}}
+                  style={{ width: '300px' }}
                   className=" h-13 mt-1 pr-28 p-3 text-black rounded-md border-white border-2"
                 />
                 <button className="bg-[#E2DE00]  text-black  py-4 px-8 rounded-md absolute top-1 right-1 text-sm">
@@ -116,7 +122,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        
+
       </footer>
       {/* bottom section */}
       <div className="bg-[#E2DE00] px-6 md:px-40 py-6 lg:py-10">
