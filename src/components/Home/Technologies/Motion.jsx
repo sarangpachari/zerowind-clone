@@ -8,7 +8,7 @@ const Motion = () => {
     <>
       {/* CONTAINER */}
       <div
-        className="w-1/2"
+        className="md:w-1/2"
         onMouseEnter={() => setHiddenContent(false)}
         onMouseLeave={() => setHiddenContent(true)}
       >

@@ -33,12 +33,12 @@ const RollingSentence = () => {
   }, []);
 
   return (
-    <div className="absolute bottom-5/6 left-0 text-7xl text-[#f5f5f5] font-black flex flex-col gt-america-exp-black px-12">
-      <div className="flex">
-        <div className="h-[1.2em]">ZeroWind creates</div>
+    <div className="md:absolute md:bottom-5/6 left-0 lg:text-7xl md:text-5xl sm:text-4xl text-xl text-[#f5f5f5] font-black flex flex-col gt-america-exp-black px-12">
+      <div className="flex flex-wrap">
+        <div className="md:h-[1.2em] text-wrap">ZeroWind creates</div>
         <RollingWord word={words[index]} />
       </div>
-      <div className="h-[1.2em]">fabrics</div>
+        <div className="md:h-[1.2em]">fabrics</div>
     </div>
   );
 };
