@@ -121,7 +121,7 @@ function Product() {
 
       {/* Main Product Image Animation */}
       <div
-        className="z-10 mt-20 h-[60vh] flex items-center justify-center"
+        className="z-10 mt-20 lg:h-[60vh] flex items-center justify-center"
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >
@@ -199,7 +199,7 @@ function Product() {
               opacity: 0,
               transition: { duration: 0.2, ease: "easeOut" },
             }}
-            className="text-[#f5f5f5] px-8 pt-8 pb-16 flex flex-col gap-8 bg-black absolute z-12 top-28 left-44 max-w-[22rem] h-max rounded-xl"
+            className="text-[#f5f5f5] px-8 pt-8 pb-16 flex flex-col gap-8 bg-black lg:absolute z-12 top-56 left-44 max-w-[22rem] h-max rounded-xl"
           >
             <div className="text-3xl">{selected?.name}</div>
             <div className="flex gap-8 text-[#959595]">

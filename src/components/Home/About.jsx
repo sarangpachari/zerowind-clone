@@ -35,8 +35,8 @@ Laboratory tests and practical trials ensure the best experience of use and usag
           ></path>
         </svg>
         {/* ABOUT CONTENT */}
-        <div className=" absolute bottom-5 left-36 px-12 gt-america-regular">
-          <div className="text-3xl text-[#f5f5f5] max-w-2xl mb-24">
+        <div className="absolute top-24 md:top-32 lg:bottom-0 lg:left-36 px-12 gt-america-regular">
+          <div className="md:text-2xl text-xl text-[#f5f5f5] max-w-2xl lg:mb-24 mb-12">
             Passion for outdoor activities and pursuit of technicality make
             ZeroWind the ideal brand for creating performance fabrics for a wide
             range of uses.
@@ -44,7 +44,7 @@ Laboratory tests and practical trials ensure the best experience of use and usag
           <div className="text-base text-[#959595] tracking-widest">
             <TwoColumnParagraph text={paragraph} />
           </div>
-          <div className="mt-24">
+          <div className="lg:mt-24 mt-6">
             <ContactBtn />
           </div>
         </div>
